@@ -1,55 +1,33 @@
 
-  
-  // ===== HAMBURGER BUTTON ===== //
-  $(document).ready(function() {
-    
-    $('.nav-button').click(function() {
-      $('.nav-button').toggleClass('change');
-    })
-      
-  });
-  
+///compra en cuotas
 
-  // ==== END NAVBAR ==== //
+const validarTotal = (total) => isNaN(total) || total <= 0;
 
-//=== formulario ===//
-class Persona {
-  constructor(nombre, email, message){
-      this.nombre =nombre;
-      this.email=email; 
-      this.message=message; 
-  }
+const validarCuotas = (cuotas) => cuotas !== 1 && cuotas !== 3 && cuotas !== 6 && cuotas !== 9 && cuotas !== 12;
+
+const pedirTotal = () => {
+    let total = parseFloat(prompt("Escriba su monto total"));
+    while (validarTotal(total)) {
+        alert("Por favor, escriba un número mayor a cero.");
+        total = parseFloat(prompt("Escriba su monto total"));
+    }
+    return total;
 }
 
-
-let datoUsuario = []; 
-
-
-datoUsuario.push(new Persona ("Maria Perez", "mariaperez@gmail.com", "hola"))
-datoUsuario.push(new Persona ("Juana Lopez","juana@gmail.com" , "hola como "))
-datoUsuario.push(new Persona ("Felipe Gimenez", "felipe@gmail.com", "hola como estas?"))
-
-
-const agregarPersonasALaLista = () => {
-  let nombre = prompt ("Put your name");
-  let email = prompt("Put your email");
-  let message = prompt( "Leave your message")
-
-
-  let persona = new Persona( nombre, email, message)
-  datoUsuario.push(persona)
-
+const pedirCuotas = () => {
+    let cuotas = parseInt(prompt(" Escriba la cantidad de cuotas en las que desea pagar"));
+    while (validarCuotas(cuotas)) {
+        alert("Por favor, ingrese 1, 3, 6, 9 o 12 cuotas");
+        cuotas = parseInt(prompt(" Escriba la cantidad de cuotas en las que desea pagar"));
+    }
+    return cuotas;
 }
 
-datoUsuario.sort(( a,b) => {
-  if (a.nombre > b.nombre) {
-      return 1 
-  }
-  if (a.nombre < b.nombre){
-      return -1 
-  }  
-  return 0 
+const valorCuotas = (total, cuotas) => {
+    const cuenta = total / cuotas
+    return cuenta.toFixed(2);
+}
 
-})
-
-console.log(datoUsuario);
+const total = pedirTotal();
+const cuotas = pedirCuotas();
+alert(`Usted debe pagar ${cuotas} cuotas de ${valorCuotas(total, cuotas)}`);
