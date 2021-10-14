@@ -12,7 +12,7 @@ class datos {
 
 const guardarInfo = () => {
 
-    const dato = new dato (
+    const dato = new datos (
         {
             name :document.getElementById("name").value,
             email:document.getElementById("email").value,
