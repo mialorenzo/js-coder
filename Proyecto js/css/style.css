@@ -1,0 +1,584 @@
+.navbar-brand {
+    color: black;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  
+  .nav-menu {
+    background: linear-gradient(white 0%, rgba(0,0,0,0) );
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  
+    transition: all .4s;
+  }
+  
+  @media (max-width:34em) {
+    .nav-menu {
+        background: #000 !important;
+    }
+  }
+  
+  .nav-item {
+    padding: 0 10px;
+  }
+  
+  .menu-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 34em) {
+    .menu-item {
+        padding: 10px 10px 10px;
+    }
+  }
+  
+  .navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .ham {
+    transition: width 0.3s;
+    background: #F9F8F7;
+  }
+  
+  .line1, .line3  {
+    width: 28px;
+    height: 2px;
+    margin: 6px;    
+    transition:  0.4s;
+    
+  }
+  
+  .change .line1 {
+    transform: rotate(-45deg) translate(-3px, 2px);
+  }
+  
+  .change .line3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+  }
+  
+  .menu-item:hover {
+    color: yellow;
+  }
+  
+  .nav-active {
+    color: yellow;
+  }
+  
+  .dropdown-item {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  
+  .costum-navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #000 !important;  
+    position: fixed;
+  }
+  
+  /* ===== END OF NAVBAR SECTION ===== */
+  
+  
+  /* ===== HERO SECTION ===== */
+  
+  .hero-section {
+    background:  
+         url(../images/FRONT-SEA-VIEW-SUITE-WITH-OUTOOR-SPA-BATH-11-820x410.jpg);
+        
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-hero {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .sub-text-hero {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 9px;
+    color: orange;
+  }
+  
+  .nav-bottom {
+    background: transparent !important;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    
+    bottom: 10px;
+  }
+  
+  .item-bottom {
+    padding: 0 20px;
+    transition: .2s;
+    font-size: 20px;
+  }
+  
+  .item-bottom:hover {
+    background: transparent;
+    transform: translateY(-2px);
+  }
+  
+  /* ===== END OF HERO SECTION ===== */
+  
+  
+  /* INDEX BANNER1 */ 
+  
+  .img-index1 {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+  
+  .title-index1{
+    margin-top: 2rem;
+    margin-left: 9rem;
+    text-align: right;
+  }
+  
+  .p-index1{
+    margin-top: 2rem;
+    margin-left: 9rem;
+    text-align: right;
+  }
+  
+  
+  /* INDEX BANNER2*/ 
+  
+  .img-index2 {
+    margin-top: 10rem;
+    margin-left: 30rem;
+  }
+  
+  .title-index2{
+    margin-top: 10rem;
+    text-align: left;
+  }
+  
+  .p-index2{
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  
+  .img-background1{
+    margin-top: 3rem;
+    background-image: url(../images/FRONT-SEA-VIEW-SUITE-WITH-OUTOOR-SPA-BATH-11-820x410.jpg);
+  }
+  
+  .page-header{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+  }
+  
+  .btn-end{
+    margin-bottom: 6rem;
+    margin-left: 2rem;
+  }
+  
+  
+  /* FOOTER*/ 
+  
+  .footer{
+    background: #152F4F;
+    color:white; }
+     nav
+      ul li a{
+        color: white;
+        transition: color .2s;
+        list-style-type: none; }
+        a:hover{
+          text-decoration:none;
+          color:#4180CB;
+    }  
+    .about-company{
+    
+        color:white;
+        transition: color .2s;
+      }
+        a:hover {
+          color:#4180CB;
+        }
+      
+    
+    .location{
+      font-size: 18px;}
+    
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  
+  
+    /*FOOTER ENDING*/
+  
+    /* ROOMS*/ 
+  
+    .title-moon{
+      margin-top: 6rem;
+      text-align: left;
+      font-size: 2rem;
+    }
+  
+    .p-moon{
+      margin-top: 2rem;
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+  
+    .img-moon{
+      align-items: right;
+      padding-left: 7rem ;
+      margin-top: 6rem;
+    }
+  
+    .title-middle{
+      text-align: center;
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    .p-middle{
+      margin-top: 2rem;
+      text-align: center;
+      margin-bottom:1rem;
+    }
+  
+    .img-middle{
+      margin-left: 22rem;
+      margin-top: 3rem;
+    }
+  
+    .bt-middle{
+      text-align: center;
+      margin-left: 38rem;
+    }
+  
+  .title-sky{
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
+  
+  .p-sky{
+    margin-left: 8rem;
+    margin-right: 3rem;
+  }
+  
+  .img-sky{
+    margin-top: 4rem;
+    margin-left: 8rem;  
+  }
+  
+  
+  .bt-sky{
+    margin-left: 8rem;
+  }
+  
+  .img-banner{
+    background-image: url(../images/MASTER-SEA-VIEW-2-500x500.jpg);
+    background-size: cover;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100vw;
+    padding-bottom: 5rem;
+  }
+  
+  .title-banner{
+    padding-top: 4rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+  .title-banner1{
+    
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+  }
+  
+  .bt-banner{
+    
+    padding-top: 7rem;
+    margin-bottom: 8rem;
+    margin-left: 3rem;
+  }
+  
+  
+  
+  
+  /*c------------Contact us ----------------- mi brother*/
+  #contact {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 40px 0;
+    font: 300 60px 'Oswald', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+  }
+  
+  /* Left contact page */
+  .form-horizontal {
+    /*float: left;*/
+    max-width: 400px;
+    font-family: 'Lato';
+    font-weight: 400;
+  }
+  
+  .form-control, 
+  textarea {
+    max-width: 400px;
+    background-color: grey;
+    color: pink;
+    letter-spacing: 1px;
+  }
+  
+  .send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+  .alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+  .send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+  
+  .alt-send-button:hover {
+    transform: translate3d(0px, -29px, 0px);
+  }
+  
+  /* Begin Right Contact Page */
+  .direct-contact-container {
+    max-width: 400px;
+  }
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  
+  /* Social Media Icons */
+  .social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .social-media-list li a {
+    color: #fff;
+  }
+  
+  .social-media-list li {
+    position: relative; 
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 10px 3px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgb(27,27,27);
+    cursor: pointer; 
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 0 1px #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .social-media-list li:hover {
+    background-color: #fff; 
+  }
+  
+  .social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+  }
+  
+  .social-media-list li:hover a {
+    color: #000;
+  }
+  
+  .copyright {
+    font: 200 14px 'Oswald', sans-serif;
+    color: #555;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  hr {
+    border-color: rgba(255,255,255,.6);
+  }
+  
+  /* Begin Media Queries*/
+  @media screen and (max-width: 850px) {
+    .contact-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .direct-contact-container, .form-horizontal {
+      margin: 0 auto;
+    }  
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 300px;
+    }    
+    .social-media-list li {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+    }
+    .social-media-list li:after {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 569px) {
+  
+    .direct-contact-container, .form-wrapper {
+      float: none;
+      margin: 0 auto;
+    }  
+    .form-control, textarea {
+      
+      margin: 0 auto;
+    }
+   
+    
+    .name, .email, textarea {
+      width: 280px;
+    } 
+    
+    .direct-contact-container {
+      margin-top: 60px;
+      max-width: 280px;
+    }  
+    .social-media-list {
+      left: 0;
+    }
+    .social-media-list li {
+      height: 55px;
+      width: 55px;
+      line-height: 55px;
+      font-size: 2rem;
+    }
+    .social-media-list li:after {
+      width: 55px;
+      height: 55px;
+      line-height: 55px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 410px) {
+    .send-button {
+      width: 99%;
+    }
+  }
+  
+  
+  
+  
+  
+  /*formulario termina , hay que ver todo lo que tiene trushh*/ 
+  
+  
