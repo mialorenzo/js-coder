@@ -1,84 +1,79 @@
-class user {
-    constructor(nombre, pass) {
+class User {
 
+    constructor(nombre, pass) {
         this.nombre = nombre;
-        this.pass = pass;
+        this.pass = pass
     }
 }
 
 
+class Producto {
 
-class product {
     constructor(nombre, categoria, precio, stock) {
         this.nombre = nombre;
         this.categoria = categoria;
         this.precio = precio;
         this.stock = stock;
     }
+
 }
 
 
-
-
-const mia = new user("lorenzo", "coderhouse")
+const mia = new User("lorenzo", "coderhouse")
 
 let listaProductos;
 
-
 if (localStorage.getItem("lista") == null) {
-    const listaProductos = []
+    listaProductos = []
 } else {
-    listaProductos = localStorage.getItem("lista")
+    listaProductos = JSON.parse(localStorage.getItem("lista"))
 }
+
+
+
 
 const crearProducto = (nombre, categoria, precio, stock) => {
-    const product = new product(nombre, categoria, precio, stock)
-    return product
+    const producto = new Producto(nombre, categoria, precio, stock)
+    return producto
 }
-
-
 
 
 const confirmacionDeAcceso = () => {
-    
+
     let bucle = true
 
     while (bucle) {
 
-        const nombre = prompt("put your name");
-        const pass = prompt("put your password")
-        
-        
+        const nombre = prompt("Ingresa tu nombre");
+        const pass = prompt("Ingresa tu pass")
+
         if (nombre === mia.nombre && pass === mia.pass) {
             bucle = false
-            
 
             let ciclo = true;
+
             while (ciclo) {
 
-                
-                const nombre = prompt("Put the name of the producto");
-                const categoria = prompt("Put the categoria")
-                const precio = prompt("Put the price of product")
-                const stock = parseInt(prompt("put the stock of this product"));
+                const nombre = prompt("ingrese nombre del producto");
+                const categoria = prompt("ingrese categoria del producto");
+                const precio = Number(prompt("ingrese precio del producto"));
+                const stock = parseInt(prompt("Ingrese la cantidad de productos"))
 
                 listaProductos.push(crearProducto(nombre, categoria, precio, stock))
 
-
                 localStorage.setItem("lista", JSON.stringify(listaProductos))
 
-                ciclo = confirm("Deseas agregar mas?")
+                ciclo = confirm("Deseas agregar otro mas?")
+                break
             }
-
 
             break;
         } else {
-            alert("Wrong user")
+            alert("USUARIO INCORRECTO");
         }
 
     }
 
 }
-
 
 confirmacionDeAcceso()
