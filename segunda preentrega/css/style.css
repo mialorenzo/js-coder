@@ -1,0 +1,302 @@
+.navbar-brand {
+    color: black;
+    padding: 0 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  
+  .nav-menu {
+    background: linear-gradient(white 0%, rgba(0,0,0,0) );
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+  
+    transition: all .4s;
+  }
+  
+  @media (max-width:34em) {
+    .nav-menu {
+        background: #000 !important;
+    }
+  }
+  
+  .nav-item {
+    padding: 0 10px;
+  }
+  
+  .menu-item {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 34em) {
+    .menu-item {
+        padding: 10px 10px 10px;
+    }
+  }
+  
+  .navbar-toggler {
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  .ham {
+    transition: width 0.3s;
+    background: #F9F8F7;
+  }
+  
+  .line1, .line3  {
+    width: 28px;
+    height: 2px;
+    margin: 6px;    
+    transition:  0.4s;
+    
+  }
+  
+  .change .line1 {
+    transform: rotate(-45deg) translate(-3px, 2px);
+  }
+  
+  .change .line3 {
+    transform: rotate(45deg) translate(-3px, -2px);
+  }
+  
+  .menu-item:hover {
+    color: yellow;
+  }
+  
+  .nav-active {
+    color: yellow;
+  }
+  
+  .dropdown-item {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  
+  .costum-navbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #000 !important;  
+    position: fixed;
+  }
+  
+  /* ===== END OF NAVBAR SECTION ===== */
+  
+  
+  /* ===== HERO SECTION ===== */
+  
+  .hero-section {
+    background:  
+         url(../images/FRONT-SEA-VIEW-SUITE-WITH-OUTOOR-SPA-BATH-11-820x410.jpg);
+        
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-hero {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  
+  .sub-text-hero {
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 9px;
+    color: orange;
+  }
+  
+  .nav-bottom {
+    background: transparent !important;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    
+    bottom: 10px;
+  }
+  
+  .item-bottom {
+    padding: 0 20px;
+    transition: .2s;
+    font-size: 20px;
+  }
+  
+  .item-bottom:hover {
+    background: transparent;
+    transform: translateY(-2px);
+  }
+  
+  /* ===== END OF HERO SECTION ===== */
+  
+  
+  /* INDEX BANNER1 */ 
+  
+  .img-index1 {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+  
+  .title-index1{
+    margin-top: 2rem;
+    margin-left: 9rem;
+    text-align: right;
+  }
+  
+  .p-index1{
+    margin-top: 2rem;
+    margin-left: 9rem;
+    text-align: right;
+  }
+  
+  
+  /* INDEX BANNER2*/ 
+  
+  .img-index2 {
+    margin-top: 10rem;
+    margin-left: 30rem;
+  }
+  
+  .title-index2{
+    margin-top: 10rem;
+    text-align: left;
+  }
+  
+  .p-index2{
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  
+  .img-background1{
+    margin-top: 3rem;
+    background-image: url(../images/FRONT-SEA-VIEW-SUITE-WITH-OUTOOR-SPA-BATH-11-820x410.jpg);
+  }
+  
+  .page-header{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 2rem;
+  }
+  
+  .btn-end{
+    margin-bottom: 6rem;
+    margin-left: 2rem;
+  }
+  
+  
+  /* FOOTER*/ 
+  
+  .footer{
+    background: #152F4F;
+    color:white; }
+     nav
+      ul li a{
+        color: white;
+        transition: color .2s;
+        list-style-type: none; }
+        a:hover{
+          text-decoration:none;
+          color:#4180CB;
+    }  
+    .about-company{
+    
+        color:white;
+        transition: color .2s;
+      }
+        a:hover {
+          color:#4180CB;
+        }
+      
+    
+    .location{
+      font-size: 18px;}
+    
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+  
+  
+    /*FOOTER ENDING*/
+  
+    .card {
+        border-color: floralwhite;
+        height: 25em;
+        border-radius: 0.5rem;
+        text-align: center;
+        margin-bottom: 6rem; }
+        .card .card__img {
+          transition: transform 0.3s ease-in-out;
+          width: 33.3%;
+          margin: auto;
+          margin-top: 1rem; }
+        .card .card__title {
+          font-family: "Playfair Display", serif;
+          font-size: 1.5rem;
+          color: #343434; }
+        .card .card-text {
+          font-size: 0.9rem;
+          margin-top: 0rem; }
+        .card .card__block {
+          background-color: white;
+          border-color: #f6a7d8;
+          margin-bottom: 2rem; }
+        .card .card__img:hover {
+          filter: opacity(0.95); }
+      
+      .price {
+        color: #343434;
+        font-size: 1.2rem;
+        font-family: "Playfair Display", serif; }
+      
+      .btn-shop {
+        background-color: #f7d1ba;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+        font-family: "Playfair Display", serif;
+        border-color: floralwhite;
+        color: #343434;
+        padding: 0.5rem 0.5rem;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border: none;
+        height: 100;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1rem; }
+      
+      .btn-shop:hover {
+        color: #f7d1ba;
+        background-color: #343434;
+        border-color: #343434; }
+      
+      .checked {
+        color: #f6a7d8; }
+      
+      @media screen and (min-width: 768px) {
+        .card__img {
+          transition: transform 0.3s ease-in-out;
+          width: 50%;
+          margin: auto;
+          margin-top: 1rem; }
+          .card__img .card__block {
+            background-color: white;
+            border-color: #f6a7d8; }
+          .card__img .card__img:hover {
+            filter: opacity(0.95); } }
